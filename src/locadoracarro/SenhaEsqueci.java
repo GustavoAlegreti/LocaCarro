@@ -18,6 +18,7 @@ public class SenhaEsqueci extends javax.swing.JFrame {
      */
     public SenhaEsqueci() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -36,6 +37,7 @@ public class SenhaEsqueci extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Redefinição de senha - LocaCarro");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel2.setText("Mande um email para a verificação da sua senha:");
@@ -96,7 +98,7 @@ public class SenhaEsqueci extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        JOptionPane.showMessageDialog(this, "Cadastrado com sucesso!", "Aviso!", 1);
+        JOptionPane.showMessageDialog(this, "Um link de redefinição de senha foi enviado ao seu email!", "Aviso!", 1);
         this.setVisible(false);
         PaginaLogin PL = new PaginaLogin();
         PL.setVisible(true);
